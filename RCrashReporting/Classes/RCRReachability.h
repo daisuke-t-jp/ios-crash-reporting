@@ -17,12 +17,12 @@ extern NSString *kReachabilityChangedNotification;
 /**
  * Use to check the reachability of a given host name.
  */
-+ (instancetype)reachabilityWithHostName:(NSString *)hostName;
++ (nullable instancetype)reachabilityWithHostName:(NSString *)hostName;
 
 /**
  * Use to check the reachability of a given IP address.
  */
-+ (instancetype)reachabilityWithAddress:(const struct sockaddr *)hostAddress;
++ (nullable instancetype)reachabilityWithAddress:(const struct sockaddr *)hostAddress;
 
 /**
  * Checks whether the default route is available. Should be used by applications that do not connect to a particular host.
