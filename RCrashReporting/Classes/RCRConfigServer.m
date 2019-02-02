@@ -40,7 +40,7 @@ static NSString* const STICKY = @"sticky";
     }
     else
     {
-        if (!constants.prevIsEnabled)
+        if (constants.prevIsEnabled == nil)
         {
             if ([sticky boolValue])
             {

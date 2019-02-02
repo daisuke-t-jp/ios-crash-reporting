@@ -270,7 +270,7 @@ static NSString* const FOREGROUND_TIMESTAMP = @"fg_timestamp";
     // Parse out application is in foreground.
     NSNumber* appIsFocus = [crashReport valueForKeyPath:@"system.application_stats.application_in_foreground"];
     NSString* convertedAppIsFocus = @"";
-    if (appIsFocus) {
+    if (appIsFocus != nil) {
         convertedAppIsFocus = [appIsFocus boolValue] ? @"true" : @"false";
     }
     
